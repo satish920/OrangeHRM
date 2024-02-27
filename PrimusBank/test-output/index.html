@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-primusbank_Testsuite" class="navigator-link">
+              <span class="suite-name border-failed">primusbank Testsuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-primusbank_Testsuite" class="navigator-link ">
+                    <span>C:\selenim\PrimusBank\primusbank.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-primusbank_Testsuite" class="navigator-link ">
+                    <span class="test-stats">9 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-primusbank_Testsuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-primusbank_Testsuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-primusbank_Testsuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-primusbank_Testsuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-primusbank_Testsuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 4 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-primusbank_Testsuite" class="hide-methods failed suite-primusbank_Testsuite"> (hide)</a> <!-- hide-methods failed suite-primusbank_Testsuite -->
+                      <a href="#" panel-name="suite-primusbank_Testsuite" class="show-methods failed suite-primusbank_Testsuite"> (show)</a> <!-- show-methods failed suite-primusbank_Testsuite -->
+                    </span>
+                    <div class="method-list-content failed suite-primusbank_Testsuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-primusbank_Testsuite" title="PrimusBank.TestCases.AdminloginWithValidInputs" class="method navigator-link" hash-for-method="Adminloginvalid(Admin, Admin)">Adminloginvalid(Admin, Admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-primusbank_Testsuite" title="PrimusBank.TestCases.AddNewEmpWithvalidTest" class="method navigator-link" hash-for-method="addnewemp(Satish, G)">addnewemp(Satish, G)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-primusbank_Testsuite" title="PrimusBank.TestCases.AdminloginWithInValidInputs" class="method navigator-link" hash-for-method="checkAdminloginwithinvalid(hhhh, hhhh)">checkAdminloginwithinvalid(hhhh, hhhh)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-primusbank_Testsuite" title="PrimusBank.TestCases.ChangepasswordTest" class="method navigator-link" hash-for-method="checkChangePwd">checkChangePwd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-primusbank_Testsuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-primusbank_Testsuite" class="hide-methods passed suite-primusbank_Testsuite"> (hide)</a> <!-- hide-methods passed suite-primusbank_Testsuite -->
+                      <a href="#" panel-name="suite-primusbank_Testsuite" class="show-methods passed suite-primusbank_Testsuite"> (show)</a> <!-- show-methods passed suite-primusbank_Testsuite -->
+                    </span>
+                    <div class="method-list-content passed suite-primusbank_Testsuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-primusbank_Testsuite" title="PrimusBank.TestCases.AddEmpwithInvalidTest" class="method navigator-link" hash-for-method="newempinvalid">newempinvalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-primusbank_Testsuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-primusbank_Testsuite" class="panel primusbank_Testsuite">
+          <div class="suite-primusbank_Testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">PrimusBank.TestCases.ChangepasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkChangePwd">
+                  </a> <!-- checkChangePwd -->
+                  <span class="method-name">checkChangePwd</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at PrimusBank.TestCases.ChangepasswordTest.checkChangePwd(ChangepasswordTest.java:17)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-primusbank_Testsuite-class-failed -->
+          <div class="suite-primusbank_Testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">PrimusBank.TestCases.AdminloginWithInValidInputs</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAdminloginwithinvalid(hhhh, hhhh)">
+                  </a> <!-- checkAdminloginwithinvalid(hhhh, hhhh) -->
+                  <span class="method-name">checkAdminloginwithinvalid</span>
+                  <span class="parameters">(hhhh, hhhh)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtuId&quot;}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-MM71A1S&apos;, ip: &apos;192.168.100.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SATISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee8446fb10192564eb35693b3f4fd737
+*** Element info: {Using=id, value=txtuId}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PrimusBank.library.Loginpage.login(Loginpage.java:25)
+	at PrimusBank.TestCases.AdminloginWithInValidInputs.checkAdminloginwithinvalid(AdminloginWithInValidInputs.java:19)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-primusbank_Testsuite-class-failed -->
+          <div class="suite-primusbank_Testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">PrimusBank.TestCases.AddNewEmpWithvalidTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addnewemp(Satish, G)">
+                  </a> <!-- addnewemp(Satish, G) -->
+                  <span class="method-name">addnewemp</span>
+                  <span class="parameters">(Satish, G)</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Length should be in between  4 - 16 characters}
+  (Session info: chrome=116.0.5845.180): Length should be in between  4 - 16 characters
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-MM71A1S&apos;, ip: &apos;192.168.100.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SATISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee8446fb10192564eb35693b3f4fd737
+*** Element info: {Using=id, value=lst_Branch}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PrimusBank.library.Employeeloginpage.AddNewEmployee(Employeeloginpage.java:30)
+	at PrimusBank.TestCases.AddNewEmpWithvalidTest.addnewemp(AddNewEmpWithvalidTest.java:16)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-primusbank_Testsuite-class-failed -->
+          <div class="suite-primusbank_Testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">PrimusBank.TestCases.AdminloginWithValidInputs</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Adminloginvalid(Admin, Admin)">
+                  </a> <!-- Adminloginvalid(Admin, Admin) -->
+                  <span class="method-name">Adminloginvalid</span>
+                  <span class="parameters">(Admin, Admin)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtuId&quot;}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-MM71A1S&apos;, ip: &apos;192.168.100.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SATISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee8446fb10192564eb35693b3f4fd737
+*** Element info: {Using=id, value=txtuId}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PrimusBank.library.Loginpage.login(Loginpage.java:25)
+	at PrimusBank.TestCases.AdminloginWithValidInputs.Adminloginvalid(AdminloginWithValidInputs.java:18)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-primusbank_Testsuite-class-failed -->
+          <div class="suite-primusbank_Testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">PrimusBank.TestCases.AddEmpwithInvalidTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="newempinvalid">
+                  </a> <!-- newempinvalid -->
+                  <span class="method-name">newempinvalid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-primusbank_Testsuite-class-passed -->
+        </div> <!-- panel primusbank_Testsuite -->
+        <div panel-name="test-xml-primusbank_Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\selenim\PrimusBank\primusbank.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;primusbank Testsuite&quot;&gt;
+  &lt;parameter name=&quot;txnm&quot; value=&quot;Satish&quot;/&gt;
+  &lt;parameter name=&quot;pwd&quot; value=&quot;G&quot;/&gt;
+  &lt;test name=&quot;AdminloginWithValidInputs&quot;&gt;
+    &lt;parameter name=&quot;uid&quot; value=&quot;Admin&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;Admin&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AdminloginWithValidInputs&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AdminloginWithValidInputs --&gt;
+  &lt;test name=&quot;AdminloginWithInValidInputs&quot;&gt;
+    &lt;parameter name=&quot;uid&quot; value=&quot;hhhh&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;hhhh&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AdminloginWithInValidInputs&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AdminloginWithInValidInputs --&gt;
+  &lt;test name=&quot;ChangepasswordTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.ChangepasswordTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChangepasswordTest --&gt;
+  &lt;test name=&quot;AddNewEmpWithvalidTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AddNewEmpWithvalidTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddNewEmpWithvalidTest --&gt;
+  &lt;test name=&quot;AddEmpwithInvalidTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AddEmpwithInvalidTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddEmpwithInvalidTest --&gt;
+  &lt;test name=&quot;AdminloginWithValidInputs(failed)&quot;&gt;
+    &lt;parameter name=&quot;uid&quot; value=&quot;Admin&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;Admin&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.ChangepasswordTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.ChangepasswordTest --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AdminloginWithInValidInputs&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AdminloginWithInValidInputs --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AddNewEmpWithvalidTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AddNewEmpWithvalidTest --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AdminloginWithValidInputs&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+          &lt;include name=&quot;Adminloginvalid&quot; invocation-numbers=&quot;0&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AdminloginWithValidInputs --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AddEmpwithInvalidTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;CloseApp&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+          &lt;include name=&quot;LaunchApp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AddEmpwithInvalidTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AdminloginWithValidInputs(failed) --&gt;
+  &lt;test name=&quot;AdminloginWithInValidInputs(failed)&quot;&gt;
+    &lt;parameter name=&quot;uid&quot; value=&quot;hhhh&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;hhhh&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.ChangepasswordTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.ChangepasswordTest --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AdminloginWithInValidInputs&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+          &lt;include name=&quot;checkAdminloginwithinvalid&quot; invocation-numbers=&quot;0&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AdminloginWithInValidInputs --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AddNewEmpWithvalidTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AddNewEmpWithvalidTest --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AdminloginWithValidInputs&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AdminloginWithValidInputs --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AddEmpwithInvalidTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;CloseApp&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+          &lt;include name=&quot;LaunchApp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AddEmpwithInvalidTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AdminloginWithInValidInputs(failed) --&gt;
+  &lt;test name=&quot;ChangepasswordTest(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.ChangepasswordTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+          &lt;include name=&quot;checkChangePwd&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.ChangepasswordTest --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AdminloginWithInValidInputs&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AdminloginWithInValidInputs --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AddNewEmpWithvalidTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AddNewEmpWithvalidTest --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AdminloginWithValidInputs&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AdminloginWithValidInputs --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AddEmpwithInvalidTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;CloseApp&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+          &lt;include name=&quot;LaunchApp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AddEmpwithInvalidTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChangepasswordTest(failed) --&gt;
+  &lt;test name=&quot;AddNewEmpWithvalidTest(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.ChangepasswordTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.ChangepasswordTest --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AdminloginWithInValidInputs&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AdminloginWithInValidInputs --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AddNewEmpWithvalidTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addnewemp&quot; invocation-numbers=&quot;0&quot;/&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AddNewEmpWithvalidTest --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AdminloginWithValidInputs&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AdminloginWithValidInputs --&gt;
+      &lt;class name=&quot;PrimusBank.TestCases.AddEmpwithInvalidTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;CloseApp&quot;/&gt;
+          &lt;include name=&quot;logout&quot;/&gt;
+          &lt;include name=&quot;LaunchApp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- PrimusBank.TestCases.AddEmpwithInvalidTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddNewEmpWithvalidTest(failed) --&gt;
+&lt;/suite&gt; &lt;!-- primusbank Testsuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-primusbank_Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for primusbank Testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AdminloginWithValidInputs (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AdminloginWithInValidInputs (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ChangepasswordTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AddNewEmpWithvalidTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AddEmpwithInvalidTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AdminloginWithValidInputs(failed) (5 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">AdminloginWithInValidInputs(failed) (5 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">ChangepasswordTest(failed) (5 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">AddNewEmpWithvalidTest(failed) (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-primusbank_Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for primusbank Testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-primusbank_Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for primusbank Testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_primusbank_Testsuite');
+function tableData_primusbank_Testsuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'newempinvalid')
+data.setCell(0, 2, 'PrimusBank.TestCases.AddEmpwithInvalidTest')
+data.setCell(0, 3, 3357);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addnewemp')
+data.setCell(1, 2, 'PrimusBank.TestCases.AddNewEmpWithvalidTest')
+data.setCell(1, 3, 3286);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Adminloginvalid')
+data.setCell(2, 2, 'PrimusBank.TestCases.AdminloginWithValidInputs')
+data.setCell(2, 3, 105);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkChangePwd')
+data.setCell(3, 2, 'PrimusBank.TestCases.ChangepasswordTest')
+data.setCell(3, 3, 84);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkAdminloginwithinvalid')
+data.setCell(4, 2, 'PrimusBank.TestCases.AdminloginWithInValidInputs')
+data.setCell(4, 3, 30);
+window.suiteTableData['primusbank_Testsuite']= { tableData: data, tableDiv: 'times-div-primusbank_Testsuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-primusbank_Testsuite">
+              </div> <!-- times-div-primusbank_Testsuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-primusbank_Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for primusbank Testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-primusbank_Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-primusbank_Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">PrimusBank.TestCases.AddEmpwithInvalidTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">LaunchApp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">PrimusBank.TestCases.AdminloginWithValidInputs</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">login</span>
+                <span class="method-start">4914 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Adminloginvalid(Admin, Admin)</span>
+                <span class="method-start">6576 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">logout</span>
+                <span class="method-start">6702 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">PrimusBank.TestCases.AdminloginWithInValidInputs</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">login</span>
+                <span class="method-start">7720 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkAdminloginwithinvalid(hhhh, hhhh)</span>
+                <span class="method-start">9097 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">logout</span>
+                <span class="method-start">9132 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">PrimusBank.TestCases.ChangepasswordTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">login</span>
+                <span class="method-start">9741 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkChangePwd</span>
+                <span class="method-start">11075 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">logout</span>
+                <span class="method-start">11161 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">PrimusBank.TestCases.AddNewEmpWithvalidTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">login</span>
+                <span class="method-start">12120 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addnewemp(Satish, G)</span>
+                <span class="method-start">13706 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">logout</span>
+                <span class="method-start">16999 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">PrimusBank.TestCases.AddEmpwithInvalidTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">login</span>
+                <span class="method-start">17705 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">newempinvalid</span>
+                <span class="method-start">19059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">logout</span>
+                <span class="method-start">22420 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">CloseApp</span>
+                <span class="method-start">22914 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

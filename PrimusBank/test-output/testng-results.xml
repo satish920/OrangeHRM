@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="5" passed="1" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-09T18:17:04Z" name="primusbank Testsuite" finished-at="2023-09-09T18:17:22Z" duration-ms="17993">
+    <groups>
+    </groups>
+    <test started-at="2023-09-09T18:17:04Z" name="AdminloginWithValidInputs" finished-at="2023-09-09T18:17:07Z" duration-ms="2687">
+      <class name="PrimusBank.TestCases.AdminloginWithValidInputs">
+        <test-method is-config="true" signature="login()[pri:0, instance:PrimusBank.TestCases.AdminloginWithValidInputs@7c417213]" started-at="2023-09-09T23:47:04Z" name="login" finished-at="2023-09-09T23:47:06Z" duration-ms="1631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="Adminloginvalid(java.lang.String, java.lang.String)[pri:0, instance:PrimusBank.TestCases.AdminloginWithValidInputs@7c417213]" started-at="2023-09-09T23:47:06Z" name="Adminloginvalid" finished-at="2023-09-09T23:47:06Z" duration-ms="105" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtuId"}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-MM71A1S', ip: '192.168.100.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SATISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee8446fb10192564eb35693b3f4fd737
+*** Element info: {Using=id, value=txtuId}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtuId"}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-MM71A1S', ip: '192.168.100.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SATISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee8446fb10192564eb35693b3f4fd737
+*** Element info: {Using=id, value=txtuId}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PrimusBank.library.Loginpage.login(Loginpage.java:25)
+	at PrimusBank.TestCases.AdminloginWithValidInputs.Adminloginvalid(AdminloginWithValidInputs.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Adminloginvalid -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:PrimusBank.TestCases.AdminloginWithValidInputs@7c417213]" started-at="2023-09-09T23:47:06Z" name="logout" finished-at="2023-09-09T23:47:07Z" duration-ms="895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- PrimusBank.TestCases.AdminloginWithValidInputs -->
+    </test> <!-- AdminloginWithValidInputs -->
+    <test started-at="2023-09-09T18:17:07Z" name="AdminloginWithInValidInputs" finished-at="2023-09-09T18:17:09Z" duration-ms="1998">
+      <class name="PrimusBank.TestCases.AdminloginWithInValidInputs">
+        <test-method is-config="true" signature="login()[pri:0, instance:PrimusBank.TestCases.AdminloginWithInValidInputs@197d671]" started-at="2023-09-09T23:47:07Z" name="login" finished-at="2023-09-09T23:47:08Z" duration-ms="1376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="checkAdminloginwithinvalid(java.lang.String, java.lang.String)[pri:0, instance:PrimusBank.TestCases.AdminloginWithInValidInputs@197d671]" started-at="2023-09-09T23:47:08Z" name="checkAdminloginwithinvalid" finished-at="2023-09-09T23:47:08Z" duration-ms="30" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hhhh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hhhh]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtuId"}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-MM71A1S', ip: '192.168.100.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SATISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee8446fb10192564eb35693b3f4fd737
+*** Element info: {Using=id, value=txtuId}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtuId"}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-MM71A1S', ip: '192.168.100.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SATISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee8446fb10192564eb35693b3f4fd737
+*** Element info: {Using=id, value=txtuId}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PrimusBank.library.Loginpage.login(Loginpage.java:25)
+	at PrimusBank.TestCases.AdminloginWithInValidInputs.checkAdminloginwithinvalid(AdminloginWithInValidInputs.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAdminloginwithinvalid -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:PrimusBank.TestCases.AdminloginWithInValidInputs@197d671]" started-at="2023-09-09T23:47:08Z" name="logout" finished-at="2023-09-09T23:47:09Z" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- PrimusBank.TestCases.AdminloginWithInValidInputs -->
+    </test> <!-- AdminloginWithInValidInputs -->
+    <test started-at="2023-09-09T18:17:09Z" name="ChangepasswordTest" finished-at="2023-09-09T18:17:11Z" duration-ms="2351">
+      <class name="PrimusBank.TestCases.ChangepasswordTest">
+        <test-method is-config="true" signature="login()[pri:0, instance:PrimusBank.TestCases.ChangepasswordTest@7fc2413d]" started-at="2023-09-09T23:47:09Z" name="login" test-instance-name="" finished-at="2023-09-09T23:47:10Z" duration-ms="1334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="checkChangePwd()[pri:0, instance:PrimusBank.TestCases.ChangepasswordTest@7fc2413d]" started-at="2023-09-09T23:47:10Z" name="checkChangePwd" test-instance-name="" finished-at="2023-09-09T23:47:10Z" duration-ms="84" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at org.testng.Assert.assertFalse(Assert.java:73)
+	at PrimusBank.TestCases.ChangepasswordTest.checkChangePwd(ChangepasswordTest.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkChangePwd -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:PrimusBank.TestCases.ChangepasswordTest@7fc2413d]" started-at="2023-09-09T23:47:10Z" name="logout" test-instance-name="" finished-at="2023-09-09T23:47:11Z" duration-ms="930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- PrimusBank.TestCases.ChangepasswordTest -->
+    </test> <!-- ChangepasswordTest -->
+    <test started-at="2023-09-09T18:17:11Z" name="AddNewEmpWithvalidTest" finished-at="2023-09-09T18:17:17Z" duration-ms="5569">
+      <class name="PrimusBank.TestCases.AddNewEmpWithvalidTest">
+        <test-method is-config="true" signature="login()[pri:0, instance:PrimusBank.TestCases.AddNewEmpWithvalidTest@60704c]" started-at="2023-09-09T23:47:11Z" name="login" finished-at="2023-09-09T23:47:13Z" duration-ms="1586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addnewemp(java.lang.String, java.lang.String)[pri:0, instance:PrimusBank.TestCases.AddNewEmpWithvalidTest@60704c]" started-at="2023-09-09T23:47:13Z" name="addnewemp" finished-at="2023-09-09T23:47:16Z" duration-ms="3286" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Satish]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[G]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Length should be in between  4 - 16 characters}
+  (Session info: chrome=116.0.5845.180): Length should be in between  4 - 16 characters
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-MM71A1S', ip: '192.168.100.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SATISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee8446fb10192564eb35693b3f4fd737
+*** Element info: {Using=id, value=lst_Branch}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Length should be in between  4 - 16 characters}
+  (Session info: chrome=116.0.5845.180): Length should be in between  4 - 16 characters
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-MM71A1S', ip: '192.168.100.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SATISH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee8446fb10192564eb35693b3f4fd737
+*** Element info: {Using=id, value=lst_Branch}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PrimusBank.library.Employeeloginpage.AddNewEmployee(Employeeloginpage.java:30)
+	at PrimusBank.TestCases.AddNewEmpWithvalidTest.addnewemp(AddNewEmpWithvalidTest.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addnewemp -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:PrimusBank.TestCases.AddNewEmpWithvalidTest@60704c]" started-at="2023-09-09T23:47:16Z" name="logout" finished-at="2023-09-09T23:47:17Z" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- PrimusBank.TestCases.AddNewEmpWithvalidTest -->
+    </test> <!-- AddNewEmpWithvalidTest -->
+    <test started-at="2023-09-09T18:17:17Z" name="AddEmpwithInvalidTest" finished-at="2023-09-09T18:17:22Z" duration-ms="5199">
+      <class name="PrimusBank.TestCases.AddEmpwithInvalidTest">
+        <test-method is-config="true" signature="LaunchApp()[pri:0, instance:PrimusBank.TestCases.AddEmpwithInvalidTest@2805c96b]" started-at="2023-09-09T23:46:59Z" name="LaunchApp" finished-at="2023-09-09T23:47:04Z" duration-ms="4910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method is-config="true" signature="login()[pri:0, instance:PrimusBank.TestCases.AddEmpwithInvalidTest@2805c96b]" started-at="2023-09-09T23:47:17Z" name="login" finished-at="2023-09-09T23:47:18Z" duration-ms="1354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="newempinvalid()[pri:0, instance:PrimusBank.TestCases.AddEmpwithInvalidTest@2805c96b]" started-at="2023-09-09T23:47:18Z" name="newempinvalid" finished-at="2023-09-09T23:47:22Z" duration-ms="3357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newempinvalid -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:PrimusBank.TestCases.AddEmpwithInvalidTest@2805c96b]" started-at="2023-09-09T23:47:22Z" name="logout" finished-at="2023-09-09T23:47:22Z" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="CloseApp()[pri:0, instance:PrimusBank.TestCases.AddEmpwithInvalidTest@2805c96b]" started-at="2023-09-09T23:47:22Z" name="CloseApp" finished-at="2023-09-09T23:47:22Z" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseApp -->
+      </class> <!-- PrimusBank.TestCases.AddEmpwithInvalidTest -->
+    </test> <!-- AddEmpwithInvalidTest -->
+  </suite> <!-- primusbank Testsuite -->
+</testng-results>

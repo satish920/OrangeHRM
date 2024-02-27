@@ -1,0 +1,59 @@
+<suite name = "primusbank Testsuite">
+	<test name = "AdminloginWithValidInputs">
+		   	<parameter name = "uid" value = "Admin"> </parameter>
+			 <parameter name = "pwd" value = "Admin"> </parameter>
+
+
+       <classes>
+			<class name ="PrimusBank.TestCases.AdminloginWithValidInputs">
+			</class>
+	           </classes>
+	 </test> 
+	
+	<test name = "AdminloginWithInValidInputs">  
+	   	<parameter name = "uid" value = "hhhh"> </parameter>
+		<parameter name = "pwd" value = "hhhh"> </parameter>
+  <classes> 
+   <class name = "PrimusBank.TestCases.AdminloginWithInValidInputs">  </class>
+</classes>
+	
+	</test>
+    	<parameter name = "txnm" value ="Satish"></parameter>
+         <parameter name = "pwd" value = "G"></parameter>
+   
+    <test name = "ChangepasswordTest">
+		<classes>
+			<class name = "PrimusBank.TestCases.ChangepasswordTest"></class>
+		</classes>
+		
+		
+	</test>
+    
+    
+    	<test name = "AddNewEmpWithvalidTest">
+			<classes>
+				<class name = "PrimusBank.TestCases.AddNewEmpWithvalidTest"></class>
+			</classes>
+			
+			
+		</test>
+    	
+    	<test name ="AddEmpwithInvalidTest">
+			<classes>
+				<class name = "PrimusBank.TestCases.AddEmpwithInvalidTest"></class>
+			</classes>
+			
+		</test>
+    	-->
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+	
+</suite>
+

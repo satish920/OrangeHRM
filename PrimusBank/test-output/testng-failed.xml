@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [primusbank Testsuite]">
+  <parameter name="uid" value="hhhh"/>
+  <parameter name="txnm" value="Satish"/>
+  <parameter name="pwd" value="hhhh"/>
+  <test name="AdminloginWithValidInputs">
+    <parameter name="uid" value="Admin"/>
+    <parameter name="pwd" value="Admin"/>
+    <classes>
+      <class name="PrimusBank.TestCases.AdminloginWithValidInputs"/>
+    </classes>
+  </test> <!-- AdminloginWithValidInputs -->
+  <test name="AdminloginWithInValidInputs">
+    <parameter name="uid" value="hhhh"/>
+    <parameter name="pwd" value="hhhh"/>
+    <classes>
+      <class name="PrimusBank.TestCases.AdminloginWithInValidInputs"/>
+    </classes>
+  </test> <!-- AdminloginWithInValidInputs -->
+  <test name="ChangepasswordTest">
+    <classes>
+      <class name="PrimusBank.TestCases.ChangepasswordTest"/>
+    </classes>
+  </test> <!-- ChangepasswordTest -->
+  <test name="AddNewEmpWithvalidTest">
+    <classes>
+      <class name="PrimusBank.TestCases.AddNewEmpWithvalidTest"/>
+    </classes>
+  </test> <!-- AddNewEmpWithvalidTest -->
+  <test name="AddEmpwithInvalidTest">
+    <classes>
+      <class name="PrimusBank.TestCases.AddEmpwithInvalidTest"/>
+    </classes>
+  </test> <!-- AddEmpwithInvalidTest -->
+  <test name="AdminloginWithValidInputs(failed)">
+    <parameter name="uid" value="Admin"/>
+    <parameter name="pwd" value="Admin"/>
+    <classes>
+      <class name="PrimusBank.TestCases.ChangepasswordTest">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.ChangepasswordTest -->
+      <class name="PrimusBank.TestCases.AdminloginWithInValidInputs">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AdminloginWithInValidInputs -->
+      <class name="PrimusBank.TestCases.AddNewEmpWithvalidTest">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AddNewEmpWithvalidTest -->
+      <class name="PrimusBank.TestCases.AdminloginWithValidInputs">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="Adminloginvalid" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AdminloginWithValidInputs -->
+      <class name="PrimusBank.TestCases.AddEmpwithInvalidTest">
+        <methods>
+          <include name="login"/>
+          <include name="CloseApp"/>
+          <include name="logout"/>
+          <include name="LaunchApp"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AddEmpwithInvalidTest -->
+    </classes>
+  </test> <!-- AdminloginWithValidInputs(failed) -->
+  <test name="AdminloginWithInValidInputs(failed)">
+    <parameter name="uid" value="hhhh"/>
+    <parameter name="pwd" value="hhhh"/>
+    <classes>
+      <class name="PrimusBank.TestCases.ChangepasswordTest">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.ChangepasswordTest -->
+      <class name="PrimusBank.TestCases.AdminloginWithInValidInputs">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="checkAdminloginwithinvalid" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AdminloginWithInValidInputs -->
+      <class name="PrimusBank.TestCases.AddNewEmpWithvalidTest">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AddNewEmpWithvalidTest -->
+      <class name="PrimusBank.TestCases.AdminloginWithValidInputs">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AdminloginWithValidInputs -->
+      <class name="PrimusBank.TestCases.AddEmpwithInvalidTest">
+        <methods>
+          <include name="login"/>
+          <include name="CloseApp"/>
+          <include name="logout"/>
+          <include name="LaunchApp"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AddEmpwithInvalidTest -->
+    </classes>
+  </test> <!-- AdminloginWithInValidInputs(failed) -->
+  <test name="ChangepasswordTest(failed)">
+    <classes>
+      <class name="PrimusBank.TestCases.ChangepasswordTest">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="checkChangePwd"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.ChangepasswordTest -->
+      <class name="PrimusBank.TestCases.AdminloginWithInValidInputs">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AdminloginWithInValidInputs -->
+      <class name="PrimusBank.TestCases.AddNewEmpWithvalidTest">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AddNewEmpWithvalidTest -->
+      <class name="PrimusBank.TestCases.AdminloginWithValidInputs">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AdminloginWithValidInputs -->
+      <class name="PrimusBank.TestCases.AddEmpwithInvalidTest">
+        <methods>
+          <include name="login"/>
+          <include name="CloseApp"/>
+          <include name="logout"/>
+          <include name="LaunchApp"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AddEmpwithInvalidTest -->
+    </classes>
+  </test> <!-- ChangepasswordTest(failed) -->
+  <test name="AddNewEmpWithvalidTest(failed)">
+    <classes>
+      <class name="PrimusBank.TestCases.ChangepasswordTest">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.ChangepasswordTest -->
+      <class name="PrimusBank.TestCases.AdminloginWithInValidInputs">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AdminloginWithInValidInputs -->
+      <class name="PrimusBank.TestCases.AddNewEmpWithvalidTest">
+        <methods>
+          <include name="addnewemp" invocation-numbers="0"/>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AddNewEmpWithvalidTest -->
+      <class name="PrimusBank.TestCases.AdminloginWithValidInputs">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AdminloginWithValidInputs -->
+      <class name="PrimusBank.TestCases.AddEmpwithInvalidTest">
+        <methods>
+          <include name="login"/>
+          <include name="CloseApp"/>
+          <include name="logout"/>
+          <include name="LaunchApp"/>
+        </methods>
+      </class> <!-- PrimusBank.TestCases.AddEmpwithInvalidTest -->
+    </classes>
+  </test> <!-- AddNewEmpWithvalidTest(failed) -->
+</suite> <!-- Failed suite [primusbank Testsuite] -->
